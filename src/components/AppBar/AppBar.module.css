@@ -1,0 +1,7 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0A21c0;
+  font-size: x-large;
+  padding: 15px;
+}

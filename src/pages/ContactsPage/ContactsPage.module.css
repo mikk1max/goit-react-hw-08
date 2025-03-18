@@ -1,0 +1,29 @@
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 32px auto;
+
+    & section {
+        width: 862px;
+        margin: 0 auto;
+    }
+}
+
+.formSection {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+
+    & .formSectionDiv {
+        width: calc((100% - 20px) / 2);
+
+        background-color: #ffbf00;
+        border-radius: 20px;
+        
+
+        & img {
+            border-radius: 18px;
+        }
+    }
+}

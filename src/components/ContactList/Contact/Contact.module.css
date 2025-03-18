@@ -1,0 +1,97 @@
+.contactListItem {
+  display: flex;
+  min-width: 265px;
+  width: calc((100% - 30px) / 4);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 16px 10px;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactDetails p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 0;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  align-self: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.contactListItem:nth-child(2n) {
+  background-color: #ffbf00;
+
+  .buttonsContainer .edit {
+    border-color: #ffbf00;
+    background-color: #ffffff;
+  }
+
+  .buttonsContainer .edit:hover {
+    background-color: transparent;
+  }
+
+  .buttonsContainer .delete {
+    border-color: red;
+    background-color: red;
+  }
+
+  .buttonsContainer .delete:hover {
+    background-color: #ffffff;
+  }
+}
+
+.contactListItem:nth-child(2n + 1) {
+  border: 2px solid #ffbf00;
+  background-color: #ffffff;
+
+  & .buttonsContainer .edit {
+    border-color: #ffbf00;
+    background-color: #ffbf00;
+  }
+
+  & .buttonsContainer .edit:hover {
+    background-color: transparent;
+  }
+
+  .buttonsContainer .delete {
+    border-color: red;
+    background-color: red;
+  }
+
+  .buttonsContainer .delete:hover {
+    background-color: transparent;
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.buttonsContainer .edit,
+.buttonsContainer .delete {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  transition: background-color 0.3s ease;
+}
+
+.contactListItem:nth-child(2n) .buttonsContainer .edit {
+  border-color: #ffffff;
+}

@@ -1,0 +1,19 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 700;
+  color: #F1F1FC;
+  transition: background-color, color, 0.3s ease;
+}
+
+.link:hover {
+    
+  background-color: #ffbf00;
+  border-radius: 8px;
+  color: #141619;
+}
+
+.linkActive {
+  color: #FFBF00;
+}

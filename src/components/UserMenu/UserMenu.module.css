@@ -1,0 +1,40 @@
+.menuContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  & .welcomeText {
+    color: #f1f1fc;
+    font-weight: 700;
+
+    border: 2px solid #ffbf00;
+    border-radius: 8px;
+    background-color: transparent;
+
+    font-size: x-large;
+    padding: 10px;
+    margin: 0;
+  }
+
+  & button {
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+
+    color: #f1f1fc;
+    padding: 10px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color, color, 0.3s ease;
+  }
+
+  & button:hover {
+    background-color: #ffbf00;
+    color: #141619;
+  }
+}
