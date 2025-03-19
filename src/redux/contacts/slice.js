@@ -5,6 +5,7 @@ import {
   deleteContact,
   editContact,
 } from "./operations";
+import { logoutThunk } from "../auth/operations";
 
 const initialState = {
   items: [],
@@ -48,7 +49,7 @@ const slice = createSlice({
         state.loading = true;
         state.error = null;
       })
-      
+
       .addCase(editContact.fulfilled, (state, action) => {
         state.loading = false;
         const itemIndex = state.items.findIndex(
@@ -76,6 +77,10 @@ const slice = createSlice({
       .addCase(deleteContact.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload;
+      })
+
+      .addCase(logoutThunk.fulfilled, (state) => {
+        state.items = [];
       });
   },
 });
